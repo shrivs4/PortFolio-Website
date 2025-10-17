@@ -9,6 +9,7 @@ export const NavBar = ({ currentPage, setCurrentPage }: NavbarType) => {
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
+        height: "100px",
       }}
     >
       <Paper
