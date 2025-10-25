@@ -2,6 +2,25 @@ import { Box, Paper, Typography } from "@mui/material";
 import type { NavbarType } from "./types/navbarType";
 
 export const NavBar = ({ currentPage, setCurrentPage }: NavbarType) => {
+  const pageMap = {
+    Home: "home",
+    About: "about",
+    Experience: "experience",
+    Projects: "projects",
+    Contact: "contact",
+  };
+
+  const handleScroll = (id: string) => {
+    // const element = document.getElementById(id);
+    // if (element) {
+    //   element.scrollIntoView({ behavior: "smooth" });
+    //   window.scrollTo({
+    //     top: 60,
+    //     behavior: "smooth",
+    //   });
+    // }
+  };
+
   return (
     <Box
       sx={{
@@ -72,7 +91,10 @@ export const NavBar = ({ currentPage, setCurrentPage }: NavbarType) => {
                 },
               }),
             }}
-            onClick={() => setCurrentPage(item)}
+            onClick={() => {
+              handleScroll(pageMap[item as keyof typeof pageMap]);
+              setCurrentPage(item);
+            }}
           >
             {item}
           </Typography>
