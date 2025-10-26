@@ -67,9 +67,9 @@ export const ContactMe = () => {
     }
     try {
       setLoading(true);
-      const SERVICE_ID = "service_38uk8rs";
-      const TEMPLATE_ID = "template_ok2qklp";
-      const PUBLIC_KEY = "n6j_gDSjLQJfuuhaq";
+      const SERVICE_ID = "service_cczyuhh";
+      const TEMPLATE_ID = "template_00f7pzi";
+      const PUBLIC_KEY = "KKrqFekZdmZomgX9k";
 
       await emailjs.send(
         SERVICE_ID,

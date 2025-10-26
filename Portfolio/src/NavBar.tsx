@@ -11,14 +11,15 @@ export const NavBar = ({ currentPage, setCurrentPage }: NavbarType) => {
   };
 
   const handleScroll = (id: string) => {
-    // const element = document.getElementById(id);
-    // if (element) {
-    //   element.scrollIntoView({ behavior: "smooth" });
-    //   window.scrollTo({
-    //     top: 60,
-    //     behavior: "smooth",
-    //   });
-    // }
+    console.log(id);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      window.scrollTo({
+        top: id === "contact" || id === "experience" ? 80 : 60,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
