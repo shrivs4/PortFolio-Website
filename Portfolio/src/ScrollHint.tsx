@@ -1,4 +1,3 @@
-// components/ScrollHint.tsx
 import { useEffect, useState } from "react";
 import { Box, useTheme } from "@mui/material";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
@@ -9,7 +8,7 @@ export interface ScrollHintProps {
   glassBg?: string;
   isDark?: boolean;
   threshold?: number;
-  label?: string; // kept for backwards-compat, but unused now
+  label?: string;
 }
 
 export const ScrollHint = ({
@@ -71,8 +70,6 @@ export const ScrollHint = ({
           pointerEvents: "none",
         }}
       />
-
-      {/* Centered animated down-arrow button */}
       <Box
         component={motion.button}
         onClick={scrollALittle}
@@ -81,7 +78,7 @@ export const ScrollHint = ({
         transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
         sx={{
           position: "absolute",
-          left: "44%",
+          left: { xs: "44%", md: "46%" },
           bottom: { xs: 10, sm: 12, md: 14 },
           transform: "translateX(-50%)",
           bgcolor: "transparent",

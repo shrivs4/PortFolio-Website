@@ -13,6 +13,7 @@ import {
   SiSass,
   SiNextdotjs,
   SiPython,
+  SiJavascript,
 } from "react-icons/si";
 import { useEffect } from "react";
 import resumePdf from "./assets/SHRIYAM_SHRIVASTAVA_Resume.pdf";
@@ -39,6 +40,7 @@ export const Home = () => {
 
   const TECH = [
     { name: "React", Icon: SiReact, color: "#61DAFB" },
+    { name: "JavaScript", Icon: SiJavascript, color: "#E5A227" },
     { name: "Node.js", Icon: SiNodedotjs, color: "#339933" },
     { name: "Next.js", Icon: SiNextdotjs, color: theme.palette.text.primary },
     { name: "HTML", Icon: SiHtml5, color: "#E34F26" },
