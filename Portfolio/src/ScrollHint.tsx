@@ -13,14 +13,11 @@ export interface ScrollHintProps {
 
 export const ScrollHint = ({
   containerRef,
-  glassBg,
   isDark,
   threshold = 8,
 }: ScrollHintProps) => {
   const theme = useTheme();
   const dark = isDark ?? theme.palette.mode === "dark";
-  const bg =
-    glassBg ?? (dark ? "rgba(24,24,27,0.55)" : "rgba(255,255,255,0.7)");
 
   const [showHint, setShowHint] = useState(true);
 

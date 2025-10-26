@@ -20,7 +20,6 @@ import Trippy1 from "./assets/projectAsset/Trippy1.jpeg";
 import Trippy2 from "./assets/projectAsset/Trippy2.jpeg";
 import Trippy3 from "./assets/projectAsset/Trippy3.jpeg";
 import TripEx from "./assets/projectAsset/TripEx.png";
-import formOne from "./assets/projectAsset/form5.png";
 import formTwo from "./assets/projectAsset/form4.png";
 import game1 from "./assets/projectAsset/game1.jpeg";
 
