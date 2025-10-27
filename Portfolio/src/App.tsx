@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { Box } from "@mui/material";
 import { Home } from "./Home";
 import { About } from "./About";
-import { Experience } from "./Experience";
+// import { Experience } from "./Experience";
 import FloatingDownloadButton from "./FloatingDownloadButton";
 import resumePdf from "./assets/SHRIYAM_SHRIVASTAVA_Resume.pdf";
 import { Projects } from "./Projects";
