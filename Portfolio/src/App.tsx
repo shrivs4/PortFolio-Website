@@ -9,6 +9,7 @@ import FloatingDownloadButton from "./FloatingDownloadButton";
 import resumePdf from "./assets/SHRIYAM_SHRIVASTAVA_Resume.pdf";
 import { Projects } from "./Projects";
 import { ContactMe } from "./ContactMe";
+import { Services } from "./Services";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -25,7 +26,7 @@ function App() {
       const sectionHeight = containerHeight;
       const currentSection = Math.round(scrollTop / sectionHeight);
 
-      const sections = ["Home", "About", "Experience", "Projects", "Contact"];
+      const sections = ["Home", "Services", "About", "Projects", "Contact"];
       const newPage = sections[currentSection] || "Home";
 
       if (newPage !== currentPage) {
@@ -60,8 +61,9 @@ function App() {
         }}
       >
         <Home />
+        <Services />
+        {/* <Experience /> */}
         <About />
-        <Experience />
         <Projects />
         <ContactMe />
       </Box>

@@ -4,8 +4,8 @@ import type { NavbarType } from "./types/navbarType";
 export const NavBar = ({ currentPage, setCurrentPage }: NavbarType) => {
   const pageMap = {
     Home: "home",
+    Services: "services",
     About: "about",
-    Experience: "experience",
     Projects: "projects",
     Contact: "contact",
   };
@@ -16,7 +16,7 @@ export const NavBar = ({ currentPage, setCurrentPage }: NavbarType) => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       window.scrollTo({
-        top: id === "contact" || id === "experience" ? 80 : 60,
+        top: id === "contact" || id === "about" ? 80 : 60,
         behavior: "smooth",
       });
     }
@@ -57,7 +57,7 @@ export const NavBar = ({ currentPage, setCurrentPage }: NavbarType) => {
           },
         }}
       >
-        {["Home", "About", "Experience", "Projects", "Contact"].map((item) => (
+        {["Home", "Services", "About", "Projects", "Contact"].map((item) => (
           <Typography
             key={item}
             variant="body1"
