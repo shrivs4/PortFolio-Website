@@ -16,7 +16,6 @@ import {
   SiJavascript,
 } from "react-icons/si";
 import { useEffect } from "react";
-import resumePdf from "./assets/SHRIYAM_SHRIVASTAVA_Resume.pdf";
 import { BoxComponent } from "./BoxComponent";
 
 export const Home = () => {
