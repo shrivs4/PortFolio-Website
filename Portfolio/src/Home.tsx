@@ -116,7 +116,7 @@ export const Home = () => {
                 mb: 1,
               }}
             >
-              I have 6+ years crafting responsive, accessible products.
+              I have 10+ years crafting responsive, accessible products.
             </Typography>
             <Typography
               sx={{
